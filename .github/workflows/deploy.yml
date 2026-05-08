@@ -18,7 +18,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/home/webwavec/elviskidagisa.com     # ← This is the correct one
+          server-dir: public_html/home/webwavec/elviskidagisa.com/     # ← This is the correct one
           exclude: |
             .git*
             .github*
