@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ClinPlacer — Kenya's Clinical Placement Platform · Co-founded by Elvis Kidagisa</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div id="header-include"></div>
+
+<!-- ═══ HERO ═══ -->
+<div class="page-hero" style="min-height:52vh;">
+  <div class="grid-texture" style="position:absolute;inset:0;"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%, rgba(13,148,136,0.16) 0%, transparent 60%);"></div>
+  <div class="container hero-content" style="position:relative;z-index:2;">
+    <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+      <!-- ClinPlacer Logo from their CDN -->
+      <div class="reveal" style="flex-shrink:0;">
+        <img src="https://clinplacer.com/assets/images/Clinplacer.svg"
+             alt="ClinPlacer Logo"
+             style="height:48px;filter:brightness(0) invert(1);opacity:0.9;"
+             onerror="this.style.display='none'; document.getElementById('cp-fallback').style.display='flex';"/>
+        <!-- Fallback if SVG blocked -->
+        <div id="cp-fallback" style="display:none;align-items:center;gap:10px;">
+          <div style="width:44px;height:44px;border-radius:2px;background:#0D9488;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M12 2L12 22M2 12L22 12"/><circle cx="12" cy="12" r="5"/></svg>
+          </div>
+          <span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:white;letter-spacing:-0.01em;">ClinPlacer</span>
+        </div>
+      </div>
+
+      <div class="reveal delay-1">
+        <div class="section-label white" style="margin-bottom:0.75rem;">Co-founded by Elvis Kidagisa · Innovation Showcase</div>
+        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,4.8rem);font-weight:500;color:white;line-height:1.08;">
+          Kenya's Clinical<br/><em style="color:#14B8A6;font-style:normal;">Placement Platform</em>
+        </h1>
+        <p style="font-size:1rem;color:rgba(255,255,255,0.45);max-width:580px;line-height:1.85;margin-top:1rem;">
+          A compliant clinical placement coordination and monitoring system enabling accredited institutions to manage training while giving regulators full visibility — across Nursing, Medicine, Pharmacy, and every medical discipline in Kenya.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem;">
+          <a href="https://clinplacer.com/contact" target="_blank" rel="noopener" class="btn-gold">Book a Free Demo →</a>
+          <a href="https://clinplacer.com/features" target="_blank" rel="noopener" class="btn-outline">See All Features</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust badges -->
+    <div class="reveal delay-2" style="display:flex;flex-wrap:wrap;gap:1rem;margin-top:3rem;padding-top:3rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(13,148,136,0.3);background:rgba(13,148,136,0.08);padding:8px 14px;border-radius:2px;">
+        <div class="pulse-dot"></div>
+        <span style="font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5EEAD4;">Trusted by 20+ Institutions</span>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,158,11,0.25);background:rgba(245,158,11,0.06);padding:8px 14px;border-radius:2px;">
+        <span style="font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#F59E0B;">NCK Compliant</span>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);padding:8px 14px;border-radius:2px;">
+        <span style="font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);">MCK Ready</span>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);padding:8px 14px;border-radius:2px;">
+        <span style="font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);">Setup in 1 Day</span>
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);padding:8px 14px;border-radius:2px;">
+        <span style="font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);">Zero Paper</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ THE PROBLEM ═══ -->
+<section style="padding:7rem 0;background:white;">
+  <div class="container">
+    <div style="max-width:840px;margin:0 auto;text-align:center;margin-bottom:4rem;" class="reveal">
+      <div class="section-label" style="justify-content:center;">The Problem</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:500;color:#0F172A;line-height:1.2;margin-bottom:1.25rem;">
+        The System Every Institution<br/>Knows — and <em style="color:#DC2626;">Hates</em>
+      </h2>
+      <p style="font-size:1rem;color:rgba(15,23,42,0.55);line-height:1.85;max-width:600px;margin:0 auto;">
+        Manual placement management is failing institutions, students, and regulators across Kenya's entire medical training sector.
+      </p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:3rem;">
+      <!-- Problem cards -->
+      <div style="padding:2rem;border:1px solid rgba(220,38,38,0.15);border-radius:3px;background:#FFF5F5;">
+        <div style="font-size:1.5rem;margin-bottom:1rem;">📋</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:#0F172A;margin-bottom:0.75rem;">Spreadsheets &amp; Paper</h3>
+        <p style="font-size:0.84rem;color:rgba(15,23,42,0.55);line-height:1.75;">Assignment letters signed manually. Excel sheets corrupted mid-term. Students calling to ask where they're posted — for every rotation, every year.</p>
+        <div style="margin-top:1rem;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#DC2626;">Manual system reality</div>
+      </div>
+      <div style="padding:2rem;border:1px solid rgba(220,38,38,0.15);border-radius:3px;background:#FFF5F5;">
+        <div style="font-size:1.5rem;margin-bottom:1rem;">🚫</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:#0F172A;margin-bottom:0.75rem;">Zero Oversight</h3>
+        <p style="font-size:0.84rem;color:rgba(15,23,42,0.55);line-height:1.75;">No way to know which students are at which facility right now. Supervisors unreachable. Progress undocumented until the end of the programme.</p>
+        <div style="margin-top:1rem;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#DC2626;">Manual system reality</div>
+      </div>
+      <div style="padding:2rem;border:1px solid rgba(220,38,38,0.15);border-radius:3px;background:#FFF5F5;">
+        <div style="font-size:1.5rem;margin-bottom:1rem;">⚠️</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:#0F172A;margin-bottom:0.75rem;">Accreditation at Risk</h3>
+        <p style="font-size:0.84rem;color:rgba(15,23,42,0.55);line-height:1.75;">Incomplete rotation records, undocumented changes, no audit trail. Regulatory inspection arrives and there's no way to prove compliant placements.</p>
+        <div style="margin-top:1rem;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#DC2626;">Manual system reality</div>
+      </div>
+    </div>
+
+    <!-- ClinPlacer replaces all of this -->
+    <div style="background:#0F172A;border-radius:3px;padding:0.75rem;margin-bottom:0;text-align:center;position:relative;">
+      <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(13,148,136,0.5),transparent);margin-bottom:2.5rem;margin-top:1.5rem;"></div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#0D9488;margin-bottom:1.5rem;">ClinPlacer Replaces All of This</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.1);">
+        <div style="padding:2rem;background:#0F172A;">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:white;margin-bottom:0.75rem;">Assign in Minutes</div>
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.7;">Bulk-assign entire cohorts from Excel in one click. Individual students in seconds. No letters, no emails, no printing.</p>
+          <div style="margin-top:1rem;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D9488;">Built into ClinPlacer</div>
+        </div>
+        <div style="padding:2rem;background:#0F172A;">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:white;margin-bottom:0.75rem;">Full Live Visibility</div>
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.7;">Every student, every facility, every department — tracked in real time. Institutions, facilities, and regulators all see the same live picture.</p>
+          <div style="margin-top:1rem;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D9488;">Built into ClinPlacer</div>
+        </div>
+        <div style="padding:2rem;background:#0F172A;">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:white;margin-bottom:0.75rem;">Always Audit-Ready</div>
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.7;">Every placement change logged with who, when, and why. Inspection-ready reports exportable to PDF at any moment. No scrambling before visits.</p>
+          <div style="margin-top:1rem;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D9488;">Built into ClinPlacer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>@media(max-width:768px){section > .container > div[style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr!important;}}</style>
+</section>
+
+<!-- ═══ DISCIPLINES ═══ -->
+<section style="padding:7rem 0;background:#F8FAFC;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+      <div class="section-label" style="justify-content:center;">Every Medical Discipline</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:500;color:#0F172A;margin-bottom:1rem;">
+        Built for All of Kenya's<br/>Health Training Ecosystem
+      </h2>
+      <p style="font-size:0.95rem;color:rgba(15,23,42,0.55);max-width:560px;margin:0 auto;line-height:1.85;">
+        ClinPlacer is not limited to one profession. Any accredited institution managing clinical placements — regardless of discipline — uses the same compliant platform.
+      </p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;" class="reveal">
+      <div style="padding:1.5rem;background:white;border:1px solid rgba(13,148,136,0.15);border-radius:3px;border-top:3px solid #0D9488;">
+        <div style="font-weight:700;color:#0F172A;font-size:0.9rem;margin-bottom:0.5rem;">Nursing</div>
+        <p style="font-size:0.8rem;color:rgba(15,23,42,0.5);line-height:1.65;">NCK-compliant rotation tracking for KRCHN &amp; KRN programmes. 3,200 supervised clinical hours documented.</p>
+      </div>
+      <div style="padding:1.5rem;background:white;border:1px solid rgba(13,148,136,0.15);border-radius:3px;border-top:3px solid #14B8A6;">
+        <div style="font-weight:700;color:#0F172A;font-size:0.9rem;margin-bottom:0.5rem;">Medicine</div>
+        <p style="font-size:0.8rem;color:rgba(15,23,42,0.5);line-height:1.65;">Clinical clerkship management for MBChB &amp; clinical medicine students across all rotation blocks.</p>
+      </div>
+      <div style="padding:1.5rem;background:white;border:1px solid rgba(245,158,11,0.2);border-radius:3px;border-top:3px solid #F59E0B;">
+        <div style="font-weight:700;color:#0F172A;font-size:0.9rem;margin-bottom:0.5rem;">Pharmacy</div>
+        <p style="font-size:0.8rem;color:rgba(15,23,42,0.5);line-height:1.65;">PPB-aligned placement coordination for hospital and community pharmacy rotations.</p>
+      </div>
+      <div style="padding:1.5rem;background:white;border:1px solid rgba(13,148,136,0.15);border-radius:3px;border-top:3px solid #0D9488;">
+        <div style="font-weight:700;color:#0F172A;font-size:0.9rem;margin-bottom:0.5rem;">Physiotherapy</div>
+        <p style="font-size:0.8rem;color:rgba(15,23,42,0.5);line-height:1.65;">KPA-recognised attachment tracking across rehabilitation facilities in Kenya.</p>
+      </div>
+      <div style="padding:1.5rem;background:white;border:1px solid rgba(13,148,136,0.15);border-radius:3px;">
+        <div style="font-weight:700;color:#0F172A;font-size:0.9rem;margin-bottom:0.5rem;">Dental</div>
+        <p style="font-size:0.8rem;color:rgba(15,23,42,0.5);line-height:1.65;">Dental Board of Kenya-aligned clinical hours documentation and rotation scheduling.</p>
+      </div>
+      <div style="padding:1.5rem;background:white;border:1px solid rgba(13,148,136,0.15);border-radius:3px;">
+        <div style="font-weight:700;color:#0F172A;font-size:0.9rem;margin-bottom:0.5rem;">Medical Lab</div>
+        <p style="font-size:0.8rem;color:rgba(15,23,42,0.5);line-height:1.65;">KMLTTB programme management for laboratory science student placements.</p>
+      </div>
+      <div style="padding:1.5rem;background:white;border:1px solid rgba(13,148,136,0.15);border-radius:3px;">
+        <div style="font-weight:700;color:#0F172A;font-size:0.9rem;margin-bottom:0.5rem;">Midwifery</div>
+        <p style="font-size:0.8rem;color:rgba(15,23,42,0.5);line-height:1.65;">Midwifery programme scheduling across maternal health facilities nationwide.</p>
+      </div>
+      <div style="padding:1.5rem;background:#0F172A;border:1px solid rgba(13,148,136,0.2);border-radius:3px;display:flex;align-items:center;justify-content:center;text-align:center;">
+        <div>
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">+</div>
+          <div style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.6;">Any regulated medical training programme in Kenya</div>
+          <a href="https://clinplacer.com/contact" target="_blank" style="display:inline-block;margin-top:0.75rem;font-size:0.72rem;color:#14B8A6;font-weight:600;text-decoration:none;">Talk to us →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>@media(max-width:768px){section > .container > div:last-child{grid-template-columns:1fr 1fr!important;}}</style>
+</section>
+
+<!-- ═══ ZARA AI + MRP ═══ -->
+<section style="padding:7rem 0;background:#0F172A;position:relative;overflow:hidden;">
+  <div class="grid-texture" style="position:absolute;inset:0;opacity:0.6;"></div>
+  <div style="position:absolute;top:0;right:0;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(13,148,136,0.12) 0%,transparent 65%);"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;">
+      <div class="reveal">
+        <div class="section-label gold" style="margin-bottom:1rem;">ZARA AI + Master Rota Plan</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.4rem);font-weight:500;color:white;line-height:1.2;margin-bottom:1.5rem;">
+          Your Entire Clinical<br/>Programme in One<br/><em style="color:#14B8A6;font-style:normal;">Living Schedule</em>
+        </h2>
+        <p style="font-size:0.95rem;color:rgba(255,255,255,0.45);line-height:1.85;margin-bottom:2.5rem;">
+          The Master Rota Plan (MRP) — new and live — gives every institution a complete, AI-powered rotation calendar. Upload your existing MRP manual and ZARA, ClinPlacer's AI assistant, generates the full schedule for every cohort in minutes.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;">
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9rem;color:rgba(255,255,255,0.5);line-height:1.7;">
+            <svg style="width:18px;height:18px;color:#0D9488;flex-shrink:0;margin-top:2px;" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            Upload Excel, PDF, or Word — ZARA decodes all formats
+          </li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9rem;color:rgba(255,255,255,0.5);line-height:1.7;">
+            <svg style="width:18px;height:18px;color:#0D9488;flex-shrink:0;margin-top:2px;" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            Reuse the same rotation sequence for every new intake — zero rework
+          </li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9rem;color:rgba(255,255,255,0.5);line-height:1.7;">
+            <svg style="width:18px;height:18px;color:#0D9488;flex-shrink:0;margin-top:2px;" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            ZARA checks capacity conflicts before you even see the rota
+          </li>
+          <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9rem;color:rgba(255,255,255,0.5);line-height:1.7;">
+            <svg style="width:18px;height:18px;color:#0D9488;flex-shrink:0;margin-top:2px;" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            Accreditation hours tracked against regulatory targets in real time
+          </li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+          <a href="https://clinplacer.com/mrp.php" target="_blank" rel="noopener" class="btn-gold">Explore MRP &amp; ZARA →</a>
+          <a href="https://clinplacer.com/contact" target="_blank" rel="noopener" class="btn-outline">Book a Demo</a>
+        </div>
+      </div>
+
+      <!-- ZARA UI mockup -->
+      <div class="reveal delay-1">
+        <div style="background:#0D1B2E;border:1px solid rgba(13,148,136,0.25);border-radius:8px;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,0.5);">
+          <!-- Header bar -->
+          <div style="background:#0A1520;padding:12px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,0.06);">
+            <div style="width:8px;height:8px;border-radius:50%;background:#0D9488;box-shadow:0 0 6px #0D9488;"></div>
+            <span style="font-size:0.72rem;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:0.08em;">ZARA · AI Clinical Coordinator</span>
+          </div>
+          <!-- Chat -->
+          <div style="padding:1.5rem;display:flex;flex-direction:column;gap:1rem;">
+            <div style="background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.2);border-radius:8px;padding:1rem;font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.6;">
+              Processing your MRP manual…<br/>
+              <br/>
+              I've read your uploaded document. I found <strong style="color:#14B8A6;">12 blocks</strong> across <strong style="color:#14B8A6;">4 years</strong> with <strong style="color:#14B8A6;">23 weeks</strong> of clinical rotations. Shall I generate the MRP for KRCHN September 2026?
+            </div>
+            <div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.15);border-radius:8px;padding:0.75rem 1rem;font-size:0.82rem;color:rgba(255,255,255,0.5);align-self:flex-end;max-width:80%;">
+              Yes — use 4 groups. Start 1st September 2026.
+            </div>
+            <div style="background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.2);border-radius:8px;padding:1rem;font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.65;">
+              ✓ Generated. I've assigned each group to parallel departments at <strong style="color:#14B8A6;">3 facilities</strong>. One capacity conflict detected at Pumwani — 3 options available to resolve.<br/>
+              <br/>
+              <span style="color:#0D9488;font-weight:600;">→ Ready to review in MRP Editor</span>
+            </div>
+            <!-- Stats row -->
+            <div style="display:flex;gap:1rem;padding-top:0.5rem;">
+              <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:4px;padding:0.75rem;text-align:center;">
+                <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:#14B8A6;">2 min</div>
+                <div style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:2px;letter-spacing:0.08em;text-transform:uppercase;">Time taken</div>
+              </div>
+              <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:4px;padding:0.75rem;text-align:center;">
+                <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:#F59E0B;">28</div>
+                <div style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:2px;letter-spacing:0.08em;text-transform:uppercase;">Students linked</div>
+              </div>
+              <div style="flex:1;background:rgba(255,255,255,0.04);border-radius:4px;padding:0.75rem;text-align:center;">
+                <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:white;">4</div>
+                <div style="font-size:0.65rem;color:rgba(255,255,255,0.3);margin-top:2px;letter-spacing:0.08em;text-transform:uppercase;">Groups</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>@media(max-width:768px){section > .container > div{grid-template-columns:1fr!important;gap:3rem!important;}}</style>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section style="padding:7rem 0;background:white;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+      <div class="section-label" style="justify-content:center;">What Administrators Say</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:500;color:#0F172A;">Real Results Across Kenya</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+      <div class="card reveal" style="padding:2rem;">
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;color:rgba(13,148,136,0.2);line-height:1;margin-bottom:1rem;">"</div>
+        <p style="font-family:'Playfair Display',serif;font-style:italic;color:rgba(15,23,42,0.65);font-size:0.92rem;line-height:1.8;margin-bottom:1.5rem;">What used to take us 3 weeks of back-and-forth emails now takes one afternoon. We uploaded our MRP manual and ZARA had the full schedule ready by lunch.</p>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D9488;">Training Institution Administrator</div>
+      </div>
+      <div class="card reveal delay-1" style="padding:2rem;">
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;color:rgba(13,148,136,0.2);line-height:1;margin-bottom:1rem;">"</div>
+        <p style="font-family:'Playfair Display',serif;font-style:italic;color:rgba(15,23,42,0.65);font-size:0.92rem;line-height:1.8;margin-bottom:1.5rem;">For the first time since we started, we can show NCK exactly where every student is, how many hours they've completed, and when each rotation ends. It's transformed our inspection readiness.</p>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D9488;">NCK Compliance Officer</div>
+      </div>
+      <div class="card reveal delay-2" style="padding:2rem;">
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;color:rgba(13,148,136,0.2);line-height:1;margin-bottom:1rem;">"</div>
+        <p style="font-family:'Playfair Display',serif;font-style:italic;color:rgba(15,23,42,0.65);font-size:0.92rem;line-height:1.8;margin-bottom:1.5rem;">Our hospital used to get surprise calls about incoming students. Now we see the full rotation calendar weeks in advance and can prepare supervision capacity properly.</p>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0D9488;">Hospital Supervisor, Nairobi</div>
+      </div>
+    </div>
+  </div>
+  <style>@media(max-width:768px){section > .container > div:last-child{grid-template-columns:1fr!important;}}</style>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section style="padding:6rem 0;background:#0D9488;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,0.02) 0px,rgba(255,255,255,0.02) 1px,transparent 1px,transparent 20px);"></div>
+  <div class="container" style="position:relative;z-index:2;text-align:center;">
+    <div class="reveal">
+      <img src="https://clinplacer.com/assets/images/Clinplacer.svg" alt="ClinPlacer" style="height:32px;filter:brightness(0) invert(1);opacity:0.8;margin:0 auto 2rem;" onerror="this.style.display='none'"/>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:500;color:white;max-width:700px;margin:0 auto 1.25rem;line-height:1.2;">
+        Ready to Go Paperless<br/>and Stay Compliant?
+      </h2>
+      <p style="font-size:0.95rem;color:rgba(255,255,255,0.7);max-width:500px;margin:0 auto 2.5rem;line-height:1.8;">
+        Join Kenya's growing network of accredited medical training institutions managing placements on ClinPlacer. Book a demo and see your programme running in 30 minutes.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://clinplacer.com/contact" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:white;color:#0D9488;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:14px 30px;border-radius:2px;text-decoration:none;transition:transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+          Book a Free Demo →
+        </a>
+        <a href="https://clinplacer.com/pricing" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.85);font-size:0.78rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:14px 30px;border-radius:2px;border:1px solid rgba(255,255,255,0.3);text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(255,255,255,0.7)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)'">
+          See Pricing
+        </a>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.15);">
+        <span style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.65);">✓ NCK Compliant</span>
+        <span style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.65);">✓ Setup in 1 Day</span>
+        <span style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.65);">✓ Local Support Team</span>
+        <span style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.65);">✓ Zero Paper</span>
+        <span style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.65);">✓ Secure &amp; Auditable</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-include"></div>
+<script src="shared.js"></script>
+</body>
+</html>
